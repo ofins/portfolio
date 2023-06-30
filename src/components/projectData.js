@@ -9,7 +9,7 @@ const projects_list = [
     {
         id: 1,
         logo: faBasketball,
-        text: "RGA Basketball Tracker",
+        text: "RGA Basketball Tracker (desktop/ipad)",
         date_range: "May 24, 2023 - Jun 10, 2023",
         built_with: [
             "React.js",
