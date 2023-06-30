@@ -1,0 +1,119 @@
+.home--container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  place-items: center;
+}
+
+#name {
+  color: var(--color-3);
+}
+
+.home--intro {
+  width: 90%;
+  margin-top:5%;
+}
+
+.home--intro p {
+  font-size:20px;
+}
+
+.home--intro button {
+  background-color: transparent;
+  color: var(--white);
+  padding:10px 30px;
+  border:1px solid var(--white);
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+  margin-block:5%;
+}
+.home--intro button:hover {
+  background-color: var(--white);
+  color: black;
+}
+
+.home--skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  grid-gap:2%;
+}
+.home--skills section {
+  border: 1px solid var(--white);
+  padding-inline: 15%;
+  border-radius: 5px;
+  margin-block:2%;
+}
+.home--skills section p {
+  transition: all 0.5s ease;
+}
+.home--skills section p:hover {
+  transform: translateX(-10%);
+  color: var(--color-3);
+}
+
+.home--projects {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.home--projects section {
+  width: 100%;
+  margin: 5%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  cursor: pointer;
+  transition:all 0.5s ease;
+}
+.home--projects section:hover {
+    background-color: var(--color-4);
+    color: black;
+}
+
+.home--projectHoverText {
+    padding-inline:15%;
+    letter-spacing: 0;
+    font-size:18px;
+}
+
+.home--work {
+  width:90%;
+}
+.home--work section {
+  font-size:20px;
+  display: flex;
+  justify-content: space-between;
+}
+.home--work section p:nth-child(2) {
+  font-style:italic;
+}
+
+@media (min-width: 500px) {
+  .home--skills {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home--skills {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

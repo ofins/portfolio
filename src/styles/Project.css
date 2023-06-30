@@ -1,0 +1,71 @@
+.project--container {
+    overflow-y:scroll;
+    width:100%;
+    font-size:20px;
+}
+.project--container h4, .project--container h1 {
+    color: var(--color-3)
+}
+.project--container div {
+    margin-block:2%;
+    padding-inline:2%;
+}
+
+.project--image {
+    border-radius:5px;
+    border:1px solid var(--white);
+}
+
+.project--image img {
+    width:100%;
+    min-height:400px;
+    object-fit: cover;
+    height:250px;
+}
+
+.project--imageButtons {
+    display:flex;
+    justify-content: space-between;
+    gap:5%;
+    font-size:24px;
+}
+
+.project--arrowBtns {
+    margin-inline:15px;
+    cursor:pointer;
+}
+.project--expandBtn {
+    cursor:pointer;
+}
+
+.project--header {
+    display:flex;
+    flex-direction: column;
+}
+.project--header a {
+    text-decoration: underline;
+    cursor:pointer;
+    width:fit-content;
+}
+.project--header p {
+    font-style:italic;
+    opacity:0.6;
+}
+
+.project--context {
+    max-width:1200px;
+    margin-inline:auto;
+}
+
+.project--space {
+    height:300px;
+    width:100%;
+}
+
+
+
+@media (min-width:1024px) {
+    .project--image img {
+        min-height:700px;
+    }
+}
