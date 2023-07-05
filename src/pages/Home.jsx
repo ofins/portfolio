@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import '../styles/Home.css'
 import projects_list from '../components/projectData'
+import otherProjects from '../components/otherProjects'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
     const navigate = useNavigate();
     const [displayDetails, setDisplayDetails] = useState(false);
     const [toggleMandarin, setToggleMandarin] = useState(false);
+
+
 
     return (
         <div className="home--container">
@@ -16,10 +19,6 @@ const Home = () => {
                     <>
                         <p>我是一位前端網頁開發者，具備從建立簡單的 Landing Page 到後端伺服器和連接資料庫的CRUD網站的能力。且精通英文與熟悉國際職場文化。</p>
 
-                        {/* <p>在轉換職業跑道之前，我曾在台灣的飯店行業累積了三年的豐富經驗。</p>
-
-                        <p>在飯店業之前，我在美國State Farm保險公司擔任銷售代理，後來晉升為分公司的銷售經理。</p> */}
-
                         <p>我個性沉穩，遇到困境時可以保持冷靜。在之前的職業領域培養出良好溝通與協調能力，善於專案時間管理。</p>
 
                         <p>對於終身學習的理念，我堅持不懈。過去的十年中，我嘗試涉足了兩個不同的行業，並且對每一個行業都充滿熱情。如今，我希望選擇一個讓我終生熱愛的事業。雖然一開始出於興趣開始學前端程式語言，但很快的就喜歡上這領域，因為在這行業學習永不止盡，並且總是可以帶來新的挑戰。</p>
@@ -27,8 +26,7 @@ const Home = () => {
                     :
                     <>
                         <p>I'm a front-end web developer. I can create anything from simple one-page landing page to more complex CRUD websites with a backend server and connected database.</p>
-                        {/* <p>Before this transition, I traveled to Taiwan and worked in the hotel industry for three years.</p>
-                        <p>Before the hotel industry, I worked as a sales agent in State Farm insurance and eventually became the sales manager in the branch office.</p> */}
+
                         <p>I am calm and collected and stay composed under pressure. In my previous jobs, I developed skills for team communication and time management in a work environment.</p>
                         <p>I am committed to the idea of life-long learning. In the past ten years, I've dabbled in two different industries and enjoyed both of them. Now, I would like to choose and stay in a career that I could enjoy for a life time. For me, that would be coding. It started out as a hobby quickly grew into something much more because the learning never stops and there are always new challenges ahead.</p>
                     </>
@@ -80,6 +78,10 @@ const Home = () => {
                         <p className={displayDetails === project.id ? 'none' : ''}>{project.date_range}</p>
                         <p className={displayDetails === project.id ? 'home--projectHoverText' : 'none'}>{project.summary}</p>
                     </section>
+                ))}
+                <h2 className='home--subText'>other projects</h2>
+                {otherProjects.map(project => (
+                    <a target='_blank' className='home--otherProjectsLinks' href={project.url}>{project.text}</a>
                 ))}
             </div>
             <div className="home--work" id="work">

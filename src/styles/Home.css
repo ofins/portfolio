@@ -104,6 +104,11 @@
   font-style:italic;
 }
 
+.home--otherProjectsLinks {
+  text-decoration: underline;
+  font-size:20px;
+}
+
 @media (min-width: 500px) {
   .home--skills {
     text-align: left;
