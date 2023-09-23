@@ -7,7 +7,24 @@ import {
 
 const projects_list = [
     {
-        id: 1,
+        id: 5,
+        logo: faBasketball,
+        text: "Designer Portfolio Landing Page",
+        date_range: "AUG 31, 2023 - SEP 10, 2023",
+        built_with: [
+            "JavaScript"
+        ],
+        learnt: [
+            "Building a simple Landing Page site without any framework"
+        ],
+        summary: [
+            "This is a landing page site that I worked on for a friend who is a Graphic Designer. I also invited another novice front end developer to work on it with me as an opportunity for her to practice. He requested a simple landing page website so I decided that this would be a good opportunity to work on a project with only HTML/CSS and JavaScript. "
+        ],
+        demoURL: "https://lk-01-sigma.vercel.app/",
+        sourceURL: "https://github.com/yanling-99/LK_01",
+    },
+    {
+        id: 4,
         logo: faBasketball,
         text: "RGA Basketball Tracker (desktop/ipad)",
         date_range: "May 24, 2023 - Jun 10, 2023",
@@ -38,7 +55,7 @@ const projects_list = [
         sourceURL: "https://github.com/ofins/RGA2.0",
     },
     {
-        id: 2,
+        id: 3,
         logo: faHotel,
         text: "Bed & Board",
         date_range: "Jun 17, 2023 - Jun 23, 2023",
@@ -58,7 +75,7 @@ const projects_list = [
     },
 
     {
-        id: 3,
+        id: 2,
         logo: faCampground,
         text: "RT Camp",
         date_range: "May 14, 2023 - May 20, 2023",
@@ -74,7 +91,7 @@ const projects_list = [
     },
     {
 
-        id: 4,
+        id: 1,
         logo: faMoneyBillTrendUp,
         text: "TraderREACT",
         date_range: "Jun 27, 2023 - present",

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import '../styles/Home.css'
-import projects_list from '../components/projectData'
-import otherProjects from '../components/otherProjects'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
+import '../styles/Home.css';
+import projects_list from '../components/projectData';
+import otherProjects from '../components/otherProjects';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -40,13 +40,14 @@ const Home = () => {
                     <p>HTML5</p>
                     <p>CSS3</p>
                     <p>JavaScript</p>
+                    <p>TypeScript</p>
                 </section>
                 <section>
                     <p>React.js</p>
-                    <p>React-Router-Dom</p>
-                    <p>React-Bootstrap</p>
                     <p>Bootstrap5</p>
-                    <p>Redux</p>
+                    <p>Vue.js</p>
+                    <p>UnoCSS</p>
+                    <p>Tailwind</p>
                     <p>Axios</p>
                     <p>SASS</p>
                     <p>D3</p>
@@ -60,6 +61,7 @@ const Home = () => {
                 <section>
                     <p>Git</p>
                     <p>Github</p>
+                    <p>Sourcetree</p>
                     <p>Figma</p>
                     <p>VScode</p>
                     <p>Postman</p>
@@ -70,7 +72,7 @@ const Home = () => {
                 {projects_list.map(project => (
                     <section
                         key={project.id}
-                        onClick={() => { navigate(`/project/${project.id}`) }}
+                        onClick={() => { navigate(`/project/${project.id}`); }}
                         onMouseEnter={() => setDisplayDetails(project.id)}
                         onMouseLeave={() => setDisplayDetails(false)}
                     >
@@ -80,12 +82,16 @@ const Home = () => {
                     </section>
                 ))}
                 <h2 className='home--subText'>other projects</h2>
-                {otherProjects.map(project => (
-                    <a target='_blank' className='home--otherProjectsLinks' href={project.url}>{project.text}</a>
+                {otherProjects.map((project, index) => (
+                    <a target='_blank' className='home--otherProjectsLinks' href={project.url} key={index} rel="noreferrer">{project.text}</a>
                 ))}
             </div>
             <div className="home--work" id="work">
                 <h2 className='home--subText'>works</h2>
+                <section>
+                    <p>Junior Front-End Web Developer ,StackCore Limited. Taipei, Taiwan.</p>
+                    <p>AUG 23' - present</p>
+                </section>
                 <section>
                     <p>CSR, Bayview Hotel, Inc. Taipei, Taiwan.</p>
                     <p>JAN 19' - AUG 22'</p>
@@ -115,7 +121,7 @@ const Home = () => {
                 </section>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

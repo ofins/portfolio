@@ -1,65 +1,44 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import projects_list from '../components/projectData';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleLeft, faCircleRight, faExpand } from "@fortawesome/free-solid-svg-icons";
-import '../styles/Project.css'
+import '../styles/Project.css';
 
 
 const Project = () => {
 
   const { id } = useParams();
-  const details = projects_list.find(project => project.id === parseInt(id))
+  const details = projects_list.find(project => project.id === parseInt(id));
 
-  const [imageSlot, setImageSlot] = useState(0)
+  const [imageSlot, setImageSlot] = useState(0);
   const addOne = () => {
     if (imageSlot < details.imageURL.length - 1) {
-      return setImageSlot(prev => prev + 1)
+      return setImageSlot(prev => prev + 1);
     }
-  }
+  };
   const minusOne = () => {
     if (imageSlot > 0) {
-      return setImageSlot(prev => prev - 1)
+      return setImageSlot(prev => prev - 1);
     }
-  }
+  };
 
   return (
     <div className="project--container">
       {
         <>
-          {/* <div className="project--images">
-            <div className="project--image">
-              <img src={`/${parseInt(id)}/${details.imageURL?.[imageSlot]}.png`} />
-            </div>
-            <div className="project--imageButtons">
-              <span />
-              <span>
-                <FontAwesomeIcon className='project--arrowBtns' onClick={minusOne} icon={faCircleLeft} />
-                <FontAwesomeIcon className='project--arrowBtns' onClick={addOne} icon={faCircleRight} />
-              </span>
-              <FontAwesomeIcon className='project--expandBtn' icon={faExpand} />
-            </div>
-          </div> */}
           <div className="project--context">
             <div className="project--header">
               <h1><FontAwesomeIcon icon={details.logo} /> {details.text}</h1>
               <p>{details.date_range}</p>
-              <p>source: <a href={details.sourceURL} target='_blank'>{details.sourceURL}</a></p>
-              <p>demo: <a href={details.demoURL} target='_blank'>{details.demoURL}</a></p>
+              <p>source: <a href={details.sourceURL} target='_blank' rel="noreferrer">{details.sourceURL}</a></p>
+              <p>demo: <a href={details.demoURL} target='_blank' rel="noreferrer">{details.demoURL}</a></p>
             </div>
             <div className="project--tool">
               <h4>Built with: </h4>
               {details.built_with.map((item, index) => (<p key={index}>{item}</p>))}
             </div>
             <div className="project--notes">
-              {/* <section>
-                <h4>Challenges I encountered :</h4>
-                <ul>
-                  {details.challenges.map(item => (
-                    <li>{item}</li>
-                  ))}
-                </ul>
-              </section> */}
               <section>
                 <h4>What I learned from this project :</h4>
                 <ul>
@@ -80,7 +59,7 @@ const Project = () => {
         </>
       }
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
