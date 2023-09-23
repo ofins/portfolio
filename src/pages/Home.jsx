@@ -17,7 +17,7 @@ const Home = () => {
                 <h1>Hello, I'm <span id='name'>Jack</span>.</h1>
                 {toggleMandarin ?
                     <>
-                        <p>我是一位前端網頁開發者，具備從建立簡單的 Landing Page 到後端伺服器和連接資料庫的CRUD網站的能力。且精通英文與熟悉國際職場文化。</p>
+                        <p>我是一位前端網頁開發者，目前任職在一家中型的資訊軟體開發公司。我的職責包括創建響應式和直觀的使用者界面，優化網站性能，並持續學習新興網路技術。且精通英文與熟悉國際職場文化。</p>
 
                         <p>我個性沉穩，遇到困境時可以保持冷靜。在之前的職業領域培養出良好溝通與協調能力，善於專案時間管理。</p>
 
@@ -25,9 +25,9 @@ const Home = () => {
                     </>
                     :
                     <>
-                        <p>I'm a front-end web developer. I can create anything from simple one-page landing page to more complex CRUD websites with a backend server and connected database.</p>
+                        <p>I'm currently a Jr. Front-End Web Developer at a mid-size software development company. My responsibilties include creating responsive and intuitive user interfaces, optimizing website performance, and staying up-to-date at the forefront of emerging web technologies.</p>
 
-                        <p>I am calm and collected and stay composed under pressure. In my previous jobs, I developed skills for team communication and time management in a work environment.</p>
+                        <p>I am calm and collected and stay composed under pressure. In my current jobs, I've learned to effectively communicate with backend developers, design team, project managers to complete assigned projects. </p>
                         <p>I am committed to the idea of life-long learning. In the past ten years, I've dabbled in two different industries and enjoyed both of them. Now, I would like to choose and stay in a career that I could enjoy for a life time. For me, that would be coding. It started out as a hobby quickly grew into something much more because the learning never stops and there are always new challenges ahead.</p>
                     </>
                 }
@@ -89,7 +89,7 @@ const Home = () => {
             <div className="home--work" id="work">
                 <h2 className='home--subText'>works</h2>
                 <section>
-                    <p>Junior Front-End Web Developer ,StackCore Limited. Taipei, Taiwan.</p>
+                    <p>Junior Front-End Web Developer, StackCore Limited. Taipei, Taiwan.</p>
                     <p>AUG 23' - present</p>
                 </section>
                 <section>

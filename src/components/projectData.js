@@ -3,12 +3,13 @@ import {
     faHotel,
     faBasketball,
     faCampground,
+    faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 const projects_list = [
     {
         id: 5,
-        logo: faBasketball,
+        logo: faUser,
         text: "Designer Portfolio Landing Page",
         date_range: "AUG 31, 2023 - SEP 10, 2023",
         built_with: [
@@ -18,7 +19,7 @@ const projects_list = [
             "Building a simple Landing Page site without any framework"
         ],
         summary: [
-            "This is a landing page site that I worked on for a friend who is a Graphic Designer. I also invited another novice front end developer to work on it with me as an opportunity for her to practice. He requested a simple landing page website so I decided that this would be a good opportunity to work on a project with only HTML/CSS and JavaScript. "
+            "I collaborated on this landing page project for a Graphic Designer friend, and I extended an invitation to a budding front-end developer to join me. This endeavor was designed to offer her valuable practice and experience. At the core of our project was the creation of a straightforward landing page website, using only HTML, CSS, and JavaScript, as per our client's request."
         ],
         demoURL: "https://lk-01-sigma.vercel.app/",
         sourceURL: "https://github.com/yanling-99/LK_01",
