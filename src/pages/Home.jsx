@@ -94,7 +94,7 @@ const Home = () => {
                 </section>
                 <section>
                     <p>CSR, Bayview Hotel, Inc. Taipei, Taiwan.</p>
-                    <p>JAN 19' - AUG 22'</p>
+                    <p>JAN 19' - AUG 21'</p>
                 </section>
                 <section>
                     <p>Sales Manager, State Farm. Los Angeles, CA.</p>
