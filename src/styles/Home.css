@@ -15,22 +15,22 @@
 
 .home--intro {
   width: 90%;
-  margin-top:5%;
+  margin-top: 5%;
 }
 
 .home--intro p {
-  font-size:20px;
+  font-size: 20px;
 }
 
 .home--intro button {
   background-color: transparent;
   color: var(--white);
-  padding:10px 30px;
-  border:1px solid var(--white);
-  border-radius:5px;
-  cursor:pointer;
+  padding: 10px 30px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  margin-block:5%;
+  margin-block: 5%;
 }
 .home--intro button:hover {
   background-color: var(--white);
@@ -43,13 +43,13 @@
   text-align: center;
   width: 90%;
   height: 100%;
-  grid-gap:2%;
+  grid-gap: 2%;
 }
 .home--skills section {
   border: 1px solid var(--white);
   padding-inline: 15%;
   border-radius: 5px;
-  margin-block:2%;
+  margin-block: 2%;
 }
 .home--skills section p {
   transition: all 0.5s ease;
@@ -79,34 +79,41 @@
   border-radius: 5px;
   border: 1px solid var(--white);
   cursor: pointer;
-  transition:all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.home--projects section h3 {
+  text-align: center;
 }
 .home--projects section:hover {
-    background-color: var(--color-4);
-    color: black;
+  background-color: var(--color-4);
+  color: black;
 }
 
 .home--projectHoverText {
-    padding-inline:15%;
-    letter-spacing: 0;
-    font-size:18px;
+  padding-inline: 15%;
+  letter-spacing: 0;
+  font-size: 18px;
 }
 
 .home--work {
-  width:90%;
+  width: 90%;
 }
 .home--work section {
-  font-size:20px;
+  font-size: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .home--work section p:nth-child(2) {
-  font-style:italic;
+  font-style: italic;
+  font-size: 16px;
+  text-align: right;
+  color: var(--color-3);
 }
 
 .home--otherProjectsLinks {
   text-decoration: underline;
-  font-size:20px;
+  font-size: 20px;
 }
 
 @media (min-width: 500px) {
@@ -114,6 +121,10 @@
     text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home--work section {
+    flex-direction: row;
+    place-items: center;
   }
 }
 
